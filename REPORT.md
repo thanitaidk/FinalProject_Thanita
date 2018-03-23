@@ -6,7 +6,6 @@ Thanita Thapphasut
 Malmö University
 
 Glitch: https://iris-owl.glitch.me/ 
-To edit/see code: https://glitch.com/edit/#!/join/1a76b2af-a5bb-4c61-a723-40f3957364a9 
 
 I made a digital prototype where the user taps on the screen to lock or unlock. The prototype can be used as a part of an app, or on a display of a smart car key such as BMV display key. Besides the interaction with tap-motion, the background behind the tap area shows the user if the car is lock or not using colours. Red indicates that the car’s locked, and green means unlocked. When the user puts in the sequence incorrectly, the tap counter is reset and the tap area turns yellow, telling the user to wait (just like traffic lights!) before trying again.
 To unlock the car, it requires a tapping “password”, meaning the user must tap in a certain sequence to be able to progress. In my code, I had set the tap sequence to go from lock to unlock to: “tap, 0.8 second pause, tap, tap, tap”. To go from unlock to lock I had set the tap sequence much easier compared to unlocking process, if you recently went from lock to unlock, you can quickly tap once to lock again within one second, but if it had been unlocked for a while, a: “tap, 0.8 second pause, tap” is required. Additionally, I made the prototype sync in multiple taps on a browser and even on other devices using websocket, this is for users who share their cars with other people and this lets them all see the status of the car lock in real time. 
